@@ -1,6 +1,7 @@
 # git emoji commands
 # https://github.com/ahmadawais/Emoji-Log/
 # https://gitmoji.carloscuesta.me
+# paste to ~/.bash_profile
 
 # gfirst		  "🎉 FIRST COMMIT: $@"
 # gnew 		    "✨ NEW FEATURE: $@"
