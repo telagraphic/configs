@@ -1,35 +1,75 @@
 # git emoji commands
 # https://github.com/ahmadawais/Emoji-Log/
 # https://gitmoji.carloscuesta.me
-# paste to ~/.bash_profile
+# https://en.wikipedia.org/wiki/Unicode
+# https://emojipedia.org/
 
-# gfirst		  "🎉 FIRST COMMIT: $@"
-# gnew 		    "✨ NEW FEATURE: $@"
-# gremove 	  "🔥 REMOVED: $@"
-# gfix 		    "🛠️ FIX: $@"
-# gdatabase	  "🗂️ DATABASE: $@"
-# gimp 		    "👌 IMPROVE: $@"
-# gprogress 	"🚧 IN PROGRESS: $@"
-# gdeploy	    "🚀 DEPLOY: $@"
-# gdesign 	  "📱 DESIGN: $@"
-# grefactor 	"♻️ REFACTOR: $@"
-# gdoc		    "📚 DOCUMENTATION: $@"
-# gperformance"⚡️ PERFORMANCE: $@"
-# gstructure 	"🗄️ PROJECT STRUCTURE: $@"
-# gexp	 	    "⚗️ EXPERIMENT: $@"
+# Workflow
+# gfirst                  🎉 FIRST COMMIT
+# gnewfeature             ✨ NEW FEATURE
+# grefactor               ♻️ REFACTOR
+# gremove                 🔥 REMOVED
+# gimprove                👌 IMPROVE
+# gprogress               🚧 IN PROGRESS
 
+# Front End
+# gfrontend               🖥 FRONT-END
+# gdesign                 🖍️📐 DESIGN
+# gresdesign              📱 RESPONSIVE DESIGN
+# gtypefont               ✒️ TYPE/FONT
+# gui                     🎨 UI
+
+# Backend
+# gbackend                ⚙️ BACK-END
+# gapi                    💾 API
+# gserver                 💽️ SERVER
+# gdatabase               🗂️ DATABASE
+# gdeploy                 🚀 DEPLOY
+
+# Fixes & Performance
+# gfix                    🛠️ FIX
+# ghotfix                 🚑 HOTFIX
+# gbugfix                 🐛 BUGFIX
+# gperformance            ⚡️ PERFORMANCE
+# gexperiment             ⚗️ EXPERIMENT
+
+# Et Cetera
+# gdoc                    📚 DOCUMENTATION
+# gstructure              🗄️ PROJECT STRUCTURE
+
+
+# Git Commit, Add all and Push — in one step.
 function gcap() { git add . && git commit -m "$*" && git push }
+
+# Workflow
 function gfirst() { gcap "🎉 FIRST COMMIT: $@" }
-function gnew() { gcap "✨ NEW FEATURE: $@" }
-function gremove() { gcap "🔥 REMOVED: $@" }
-function gfix() { gcap "🛠️ FIX: $@" }
-function gdatabase() { gcap "🗂️ DATABASE: $@" }
-function gimp() { gcap "👌 IMPROVE: $@" }
-function gprogress() { gcap "🚧 IN PROGRESS: $@" }
-function gdeploy() { gcap "🚀 DEPLOY: $@" }
-function gdesign() { gcap "📱 DESIGN: $@" }
+function gnewfeature() { gcap "✨ NEW FEATURE: $@" }
 function grefactor() { gcap "♻️ REFACTOR: $@" }
-function gdoc() { gcap "📚 DOCUMENTATION: $@" }
+function gremove() { gcap "🔥 REMOVED: $@" }
+function gimprove() { gcap "👌 IMPROVE: $@" }
+function gprogress() { gcap "🚧 IN PROGRESS: $@" }
+
+# Front End
+function gfrontend() { gcap "🖥 FRONT-END: $@" }
+function gdesign() { gcap "🖍️📐 DESIGN: $@" }
+function gresdesign() { gcap "📱 RESPONSIVE DESIGN: $@" }
+function gtypefont() { gcap "✒️ TYPE/FONT: $@" }
+function gui() { gcap "🎨 UI: $@" }
+
+# Backend
+function gbackend() { gcap "⚙️ BACK-END: $@" }
+function gapi() { gcap "💾 API: $@" }
+function gserver() { gcap "💽️ SERVER: $@" }
+function gdatabase() { gcap "🗂️ DATABASE: $@" }
+function gdeploy() { gcap "🚀 DEPLOY: $@" }
+
+# Fixes & Performance
+function gfix() { gcap "🛠️ FIX: $@" }
+function ghotfix() { gcap "🚑 HOTFIX: $@" }
+function gbugfix() { gcap "🐛 BUGFIX: $@" }
 function gperformance() { gcap "⚡️ PERFORMANCE: $@" }
+function gexperiment() { gcap "⚗️ EXPERIMENT: $@" }
+
+# Et Cetera
+function gdoc() { gcap "📚 DOCUMENTATION: $@" }
 function gstructure() { gcap "🗄️ PROJECT STRUCTURE: $@" }
-function gexp() { gcap "⚗️ EXPERIMENT: $@" }
