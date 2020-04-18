@@ -5,37 +5,39 @@
 # https://emojipedia.org/
 
 # Workflow
-# gfirst                  🎉 FIRST COMMIT
-# gnewfeature             ✨ NEW FEATURE
-# grefactor               ♻️ REFACTOR
-# gremove                 🔥 REMOVED
-# gimprove                👌 IMPROVE
-# gprogress               🚧 IN PROGRESS
-
-# Front End
-# gfrontend               🖥 FRONT-END
-# gdesign                 🖍️📐 DESIGN
-# gresdesign              📱 RESPONSIVE DESIGN
-# gtypefont               ✒️ TYPE/FONT
-# gui                     🎨 UI
-
+# 🎉 gfirst
+# ✨ gnewfeature
+# ♻️ grefactor
+# 🔥 gremove
+# 👌 gimprove
+# 🚧 gprogress
+#
+# # Front End
+# 🖥 gfrontend
+# 📟 gfrontendcode
+# 🖍️📐 gdesign
+# 📱 gresdesign
+# ✒️ gtypefont
+# 🎨 gui
+# 🎞️ ganimation
+#
 # Backend
-# gbackend                ⚙️ BACK-END
-# gapi                    💾 API
-# gserver                 💽️ SERVER
-# gdatabase               🗂️ DATABASE
-# gdeploy                 🚀 DEPLOY
-
+# ⚙️ gbackend
+# 💾 gapi
+# 💽️ gserver
+# 🗂️ gdatabase
+# 🚀 gdeploy
+#
 # Fixes & Performance
-# gfix                    🛠️ FIX
-# ghotfix                 🚑 HOTFIX
-# gbugfix                 🐛 BUGFIX
-# gperformance            ⚡️ PERFORMANCE
-# gexperiment             ⚗️ EXPERIMENT
-
+# 🛠️ gfix
+# 🚑 ghotfix
+# 🐛 gbugfix
+# ⚡️ gperformance
+# ⚗️ gexperiment
+#
 # Et Cetera
-# gdoc                    📚 DOCUMENTATION
-# gstructure              🗄️ PROJECT STRUCTURE
+# 📚 gdoc
+# 🗄️ gstructure
 
 
 # Git Commit, Add all and Push — in one step.
@@ -50,11 +52,13 @@ function gimprove() { gcap "👌 IMPROVE: $@" }
 function gprogress() { gcap "🚧 IN PROGRESS: $@" }
 
 # Front End
-function gfrontend() { gcap "🖥 FRONT-END: $@" }
+function gfrontend() { gcap "🖥 FRONT-END GENERAL: $@" }
+function gfrontendcode() { gcap "📟 FRONT-END CODE: $@" }
 function gdesign() { gcap "🖍️📐 DESIGN: $@" }
 function gresdesign() { gcap "📱 RESPONSIVE DESIGN: $@" }
 function gtypefont() { gcap "✒️ TYPE/FONT: $@" }
 function gui() { gcap "🎨 UI: $@" }
+function ganimation() { gcap "🎞️ ANIMATION: $@" }
 
 # Backend
 function gbackend() { gcap "⚙️ BACK-END: $@" }
